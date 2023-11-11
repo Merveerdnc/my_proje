@@ -1,0 +1,17 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - docker build -t my-react-app .
+
+deploy:
+  stage: deploy
+  only:
+    - master
+  script:
+    - docker tag my-react-app:latest registry.gitlab.com/your-username/my-react-app:latest
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD registry.gitlab.com
+    - docker push registry.gitlab.com/your-username/my-react-app:latest
