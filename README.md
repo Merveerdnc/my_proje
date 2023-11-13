@@ -8,5 +8,6 @@
 <br> Burada .gitlab-ci.yml pipeline yapılandırma dosyamı oluşturdum burada build ve deploy kısımlarını yapılandırdım </br>
 <br> Bu yapılandırmayı güncelleyerek tekrar denedim </br> 
 <br> Bu aşamayı yapamadığım için aws üzerinden bir cloud dağıtımı oluşturamadım (aws elastic üzerinden) </br>
+<br> Kubernetes manifest dosyası için deploymen.yml ve service.yml oluşturdum </br>
 <br> Teşekkür ederim. </br>
 [gitlab linki](https://gitlab.com/Merveerdnc/my_proje)
